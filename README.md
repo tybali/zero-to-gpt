@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LLM Simulator - Professional Next.js Application
 
-## Getting Started
+## Overview
+Transform the single JSX file into a comprehensive, professional Next.js 15 application covering the complete LLM lifecycle from Day 0 to production.
 
-First, run the development server:
+## Tech Stack
+- **Next.js 15** (App Router, latest)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **shadcn/ui** components
+- **Framer Motion** for animations
+- **Monaco Editor** for code playgrounds
+- **Recharts** for visualizations
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+```
+llm-simulation/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx (landing)
+│   ├── globals.css
+│   └── stages/
+│       └── [slug]/page.tsx
+├── components/
+│   ├── ui/ (shadcn components)
+│   ├── stages/ (stage-specific components)
+│   ├── interactive/ (simulations, playgrounds)
+│   └── shared/ (reusable components)
+├── lib/
+│   ├── stages-data.ts
+│   ├── utils.ts
+│   └── hooks/
+├── public/
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── next.config.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 16 Comprehensive Stages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Phase 1: Foundation**
+1. Research & Vision
+2. Architecture Planning
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Phase 2: Data**
+3. Data Collection
+4. Data Processing & Quality
+5. Tokenization
 
-## Learn More
+**Phase 3: Architecture**
+6. Transformer Deep Dive
+7. Modern Innovations
+8. Scaling Laws
 
-To learn more about Next.js, take a look at the following resources:
+**Phase 4: Training**
+9. Training Infrastructure
+10. Pre-training Process
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Phase 5: Alignment**
+11. Supervised Fine-tuning
+12. RLHF & DPO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Phase 6: Evaluation**
+13. Benchmarking & Evals
 
-## Deploy on Vercel
+**Phase 7: Production**
+14. Model Optimization
+15. Deployment & Serving
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Phase 8: Operations**
+16. Continuous Learning & MLOps
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Implementation Order
+1. Initialize Next.js 15 project with TypeScript & Tailwind
+2. Install and configure shadcn/ui
+3. Create base layout and navigation
+4. Build landing page
+5. Create stage template and routing
+6. Implement each stage progressively
+7. Add interactive components (playgrounds, visualizations)
+8. Polish with animations and dark mode
