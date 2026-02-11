@@ -1,82 +1,62 @@
-# LLM Simulator - Professional Next.js Application
+# Zero to GPT
+
+An interactive learning platform that guides you through the complete LLM lifecycle—from research and data collection to production deployment.
 
 ## Overview
-Transform the single JSX file into a comprehensive, professional Next.js 15 application covering the complete LLM lifecycle from Day 0 to production.
+
+Zero to GPT breaks down the complex process of building large language models into 16 comprehensive stages across 8 phases. Each stage includes interactive visualizations, code playgrounds, and detailed explanations to help you understand how modern LLMs like GPT are built from scratch.
 
 ## Tech Stack
-- **Next.js 15** (App Router, latest)
+
+- **Next.js 16** with App Router
 - **TypeScript**
 - **Tailwind CSS v4**
 - **shadcn/ui** components
 - **Framer Motion** for animations
-- **Monaco Editor** for code playgrounds
 - **Recharts** for visualizations
 
-## Project Structure
+## Learning Stages
+
+| Phase | Stages |
+|-------|--------|
+| **Foundation** | Research & Vision, Architecture Planning |
+| **Data** | Data Collection, Data Processing & Quality, Tokenization |
+| **Architecture** | Transformer Deep Dive, Modern Innovations, Scaling Laws |
+| **Training** | Training Infrastructure, Pre-training Process |
+| **Alignment** | Supervised Fine-tuning, RLHF & DPO |
+| **Evaluation** | Benchmarking & Evals |
+| **Production** | Model Optimization, Deployment & Serving |
+| **Operations** | Continuous Learning & MLOps |
+
+## Quick Start
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Build for production
+pnpm build
 ```
-llm-simulation/
-├── app/
-│   ├── layout.tsx
-│   ├── page.tsx (landing)
-│   ├── globals.css
-│   └── stages/
-│       └── [slug]/page.tsx
-├── components/
-│   ├── ui/ (shadcn components)
-│   ├── stages/ (stage-specific components)
-│   ├── interactive/ (simulations, playgrounds)
-│   └── shared/ (reusable components)
-├── lib/
-│   ├── stages-data.ts
-│   ├── utils.ts
-│   └── hooks/
-├── public/
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── next.config.ts
+
+## Docker
+
+```bash
+# Build and push to GHCR
+./scripts/build-and-push.sh
+
+# Or with a custom tag
+./scripts/build-and-push.sh v1.0.0
+
+# Run locally
+docker run -p 3000:3000 ghcr.io/tybali/zero-to-gpt:latest
 ```
 
-## 16 Comprehensive Stages
+## Deployment
 
-**Phase 1: Foundation**
-1. Research & Vision
-2. Architecture Planning
-
-**Phase 2: Data**
-3. Data Collection
-4. Data Processing & Quality
-5. Tokenization
-
-**Phase 3: Architecture**
-6. Transformer Deep Dive
-7. Modern Innovations
-8. Scaling Laws
-
-**Phase 4: Training**
-9. Training Infrastructure
-10. Pre-training Process
-
-**Phase 5: Alignment**
-11. Supervised Fine-tuning
-12. RLHF & DPO
-
-**Phase 6: Evaluation**
-13. Benchmarking & Evals
-
-**Phase 7: Production**
-14. Model Optimization
-15. Deployment & Serving
-
-**Phase 8: Operations**
-16. Continuous Learning & MLOps
-
-## Implementation Order
-1. Initialize Next.js 15 project with TypeScript & Tailwind
-2. Install and configure shadcn/ui
-3. Create base layout and navigation
-4. Build landing page
-5. Create stage template and routing
-6. Implement each stage progressively
-7. Add interactive components (playgrounds, visualizations)
-8. Polish with animations and dark mode
+The app is containerized and available at:
+```
+ghcr.io/tybali/zero-to-gpt:latest
+```
