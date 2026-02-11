@@ -1,0 +1,13 @@
+services:
+  zero-to-gpt:
+    image: ghcr.io/tybali/zero-to-gpt:latest
+    container_name: zero-to-gpt
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - infrapilot
+
+networks:
+  infrapilot:
+    external: true
